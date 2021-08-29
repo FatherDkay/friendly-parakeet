@@ -18,16 +18,12 @@ function finishProcess() {
   //gather character variables and insure at least one has been sellected
   window.alert("Please select one or more of the following variables.  You will not be able to procede until at lease one has been selected");
   var lowerCase = window.confirm("If you wish to include lower case letters press OK, otherwise press Cancel");
-  window.alert("Include lower case letters: " + lowerCase);
   
   var upperCase = window.confirm("If you wish to include upper case letters press OK, otherwise press Cancel");
-  window.alert("Include upper case letters: " + upperCase);
   
   var numeric = window.confirm("If you wish to include numbers press OK, otherwise press Cancel");
-  window.alert("Include numbers: " + numeric);
   
   var special = window.confirm("If you wish to include special characters press OK, otherwise press Cancel");
-  window.alert ("Include special characters: " + special);
   
   if(lowerCase === false && upperCase === false && numeric === false && special === false){
     window.alert("You must select at lest one of the varriables.  Please try again");
