@@ -36,9 +36,9 @@ function finishProcess() {
   }
 
    //display final choices
-   window.alert("You have selected length: " + passwordLength + ", lowercase: " + lowerCase + ", uppercase: " + upperCase + ", numbers: " + numeric + ", special characters: " + special);
+  // window.alert("You have selected length: " + passwordLength + ", lowercase: " + lowerCase + ", uppercase: " + upperCase + ", numbers: " + numeric + ", special characters: " + special);
   //confirm choices
-   var ready = window.confirm("If you are ready to generate your amazing new password pres 'OK'.  Press 'Cancel' to start over  Note: to copy the password  to your computer's clipboard pres Ctrl + C");
+   var ready = window.confirm("You have selected length: " + passwordLength + ", lowercase: " + lowerCase + ", uppercase: " + upperCase + ", numbers: " + numeric + ", special characters: " + special + ".  If you are ready to generate your amazing new password pres 'OK', or press 'Cancel' to start over.  (Note: when your password is created, press 'Ctrl + C' on your keyboard to copy the password  to your computer's clipboard)");
   if(ready) {
    //start create pool of possible characters
    if(lowerCase) {
